@@ -1,21 +1,22 @@
-console.log(11);
-const todo_list=[{
-    id:1,
-    text:'Learn Janpanese',
-    completed:false
+Translation={
+T(){
+   var h=document.getElementById("Login");
+   h.innerHTML="Login";
+   var h=document.getElementById("title");
+   h.innerHTML="Orientation guide";
+   var h=document.getElementsByClassName("input-box");
+   h[0].innerHTML="Username";
+   h[0].placeholder="Enter your username";
+   h[1].innerHTML="Password";
+   h[1].placeholder="Enter your password";
+   var h=document.getElementsByid("tips");
+   h[0].innerHTML="forget password?";
+   var h=document.getElementsByClassName("operation");
+   h[0].innerHTML="Login";
+   h[1].innerHTML="Register";
+   var h=document.getElementById("");
 },
-{
-    id:2,
-    text:'Learn Javascript',
-    completed:false
-},
-{
-    id:3,
-    text:'Play violant',
-    completed:false
-}];
-
-console.log(todo_list);
-for(let i=0;i<todo_list.length;i++){
-    console.log(todo_list[i].text);
+p(){
+      alert("Hello! I am an alert box!");
+}
 }
