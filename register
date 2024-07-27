@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">新生入学指南</h1>
+    <div class="box">
+        <h2 id="register">注册</h2>
+        <div class="input-box">
+            <label>学号</label>
+            <input type="text" placeholder="请输入学号" onfocus="tips.operation1()" onblur="tips.anti_operation1()">
+        </div>
+        <div class="input-box">
+            <label>密码</label>
+            <input type="password" placeholder="请输入密码" onfocus="tips.operation2()" onblur="tips.anti_operation2()">    
+        </div>
+        <div class="input-box">
+            <label>确认密码</label>
+            <input type="password" placeholder="请再次输入密码" onfocus="tips.operation3()" onblur="tips.anti_operation3()">
+        </div>
+        <div class="btn-box">
+            <div class="operation">
+                <button >注册</button>
+                <button onclick="window.location.href='index.html'">返回</button>
+            </div>
+            <div>
+                <button onclick="Translation.Translation()">English</button>
+            </div>
+        </div>
+</body>
+<script src="./register.js"></script>
+</html>
